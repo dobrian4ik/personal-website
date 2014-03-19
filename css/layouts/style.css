@@ -1,0 +1,190 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #070707;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * -- MENU STYLE --
+ */
+ 
+.home-menu {
+	text-align: center;
+	padding: 0.5em;
+}
+
+.home-menu ul {
+	text-align: center;
+
+}
+
+.home-menu.pure-menu-open {
+    background: #fff;
+}
+
+.home-menu.pure-menu-open:hover {
+	background:#f5b710;
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #070707;
+	font-family:
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #594f3a;
+}
+
+.pure-menu-heading  {
+	
+}
+
+/*
+ * -- SPLASH STYLE --
+ */
+
+.splash-container {
+    background: #070707;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash h1 {
+	color: white;
+}
+
+.splash a {
+	color: #000;
+	background: #fdc114;
+	font-weight: 700;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+/*
+ * -- PROJECT STYLE --
+ */
+ .content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+	text-align: center;
+
+}
+
+.project {
+        padding: 1em;
+    }
+
+.project:hover {
+	background: #594f3a;
+}
+
+.project-subhead {
+    color: #070707;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.project a {
+	color: #fff;
+	background: #070707;
+	font-weight: 700;
+}
+
+.about {
+}
+
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 48em) {
+
+    .project {
+        padding: 1em;
+    }
+
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+		
+		.splash-container {
+        height: 500px;
+		}
+		
+		.splash {
+        width: 50%;
+        height: 50%;
+		}
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+@media (min-width: 78em) {
+    .about {
+	height: 800px;
+	}
+}
